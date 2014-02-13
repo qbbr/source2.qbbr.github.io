@@ -23,6 +23,10 @@ layout: default
                     Author: <a href="https://plus.google.com/117527695094688709244?rel=author" rel="author">Innokenty Sokolov</a>
                 </div>
 
+                <div>
+                    Source: <a href="https://raw.github.com/qbbr/source.qbbr.github.io/master/_posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | downcase | replace: ' ', '-' | replace: '.', '' | replace: '(', '' | replace: ')', '' }}.md">markdown</a>
+                </div>
+
                 <div class="post" itemprop="articleBody">
 {{ content }}
                 </div>

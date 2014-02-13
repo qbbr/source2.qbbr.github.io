@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "fstab mount by UUID (Universally Unique IDentifier)"
+title:  "fstab mount by UUID"
 date:   2011-09-26 08:28:00
 categories: blog
 tags: [linux, mount, uuid]
