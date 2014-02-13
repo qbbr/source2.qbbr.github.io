@@ -1,0 +1,46 @@
+---
+layout: default
+---
+        <section class="blog blog-post">
+            <header>
+                <h1><a href="/">qbbr<span>.io</span></a> / <a href="/blog/">blog</a></h1>
+            </header>
+
+            <article itemscope itemtype="http://schema.org/Article">
+                <h2>
+                    <a href="{{ page.url }}">
+                        <span itemprop="name">{{ page.title }}</span>
+                    </a>
+                </h2>
+
+                <time itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+
+                <div class="tags">
+                    Tags: <span itemprop="keywords">{{ page | tags }}</span>
+                </div>
+
+                <div>
+                    Author: <a href="https://plus.google.com/117527695094688709244?rel=author" rel="author">Innokenty Sokolov</a>
+                </div>
+
+                <div class="post" itemprop="articleBody">
+{{ content }}
+                </div>
+            </article>
+
+        </section>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'qbbr'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
