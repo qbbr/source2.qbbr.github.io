@@ -16,13 +16,13 @@ tags: [linux, debian, sysctl]
 # дисковую запись самостоятельно начнёт обратную запись.
 # Если dirty_bytes установлено, dirty_ratio становится функцией к этому значению
 # (dirty_bytes / размер "загрязняемой" системной памяти).
-echo 4194304 > /proc/sys/vm/dirty_bytes
+vm.dirty_bytes = 4194304
 # Содержит количество "грязной" памяти при котором фоновый демон
 # обратной записи pdflush начнёт обратную запись.
 # Eсли dirty_background_bytes указан, то dirty_background_ratio становится
 # функцией к этому значению т.е.
 # (dirty_background_bytes / размер "загрязняемой" системной памяти).
-echo 4194304 > /proc/sys/vm/dirty_background_bytes
+vm.dirty_background_bytes = 4194304
 
 # Отвечает за стратегию overcommit.
 # Параметр overcommit_memory указывает стратегию выделения памяти:
@@ -42,17 +42,23 @@ echo 4194304 > /proc/sys/vm/dirty_background_bytes
 #   выделять память только если она подкреплена реальными страницами
 #   в ОЗУ или свопе. При overcommit_ratio > 100 мы получаем режим,
 #   схожий с OVERCOMMIT_GUESS, но с явно установленным «ограничителем».
-echo 2 > /proc/sys/vm/overcommit_memory
+vm.overcommit_memory = 2
 
 # Отвечает за уровень (в процентах) overcommit-а.
-echo 80 >  /proc/sys/vm/overcommit_ratio
+vm.overcommit_ratio = 80
 
 # Уровень выделяемой памяти под кэш. Значение по умолчанию: 100.
 # vfs_cache_pressure = 1000 mb?
-echo 50 > /proc/sys/vm/vfs_cache_pressure
+vm.vfs_cache_pressure = 50
 
 # Значение (в целых процентах), это уровень свободной памяти,
 # при котором система начнет активно сбрасывать память в своп.
 # Значение по умолчанию: 60.
-echo 30 > /proc/sys/vm/swappiness
+vm.swappiness = 30
+
+# Сколько миллисекунд должно пройти, чтобы ядро посчитало незаписанные
+# в ФС данные достаточно устаревшими для их записи
+vm.dirty_expire_centisecs = 6000
+# Как часто ядро должно находить незаписанные в ФС данные и писать их
+vm.dirty_writeback_centisecs = 2000
 {% endhighlight %}

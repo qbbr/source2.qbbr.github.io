@@ -6,7 +6,7 @@ tag_page_layout: tag_page
 tag_page_dir: blog/tag
 permalink: /:categories/:title.html
 
-exclude: [README.md]
+exclude: [README.md, LICENSE]
 
 google_analytics:
   enabled: true
