@@ -3,7 +3,7 @@ layout: post
 title:  "iptables anti ddos kung fu rules"
 date:   2014-01-20 11:23:00
 categories: blog
-tags: [linux, iptables, ddos]
+tags: [linux, iptables, ddos, sysctl]
 ---
 
 ### ICMP flood protection
@@ -112,6 +112,7 @@ net.ipv4.conf.default.rp_filter=1
 $ netstat -n --tcp | grep SYN_RECV | wc -l
 $ netstat -plan | grep :80 | awk '{print $5}' | awk -F: '{print $1}' | sort | uniq -c
 $ netstat -ntu | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
+$ watch -n1 -d -t 'netstat -plan | grep :80 | awk "{print \$5}" | awk -F: "{print \$1}" | sort | uniq -c | sort -rg'
 {% endhighlight %}
 
 ### Enjoy!
