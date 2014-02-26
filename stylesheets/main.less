@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@blue_color: #248;
 
 body {
     font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,7 +25,7 @@ header {
         padding: 50px 0 60px 0;
 
         span {
-            color: #224488;
+            color: @blue_color;
         }
     }
 }
@@ -50,7 +51,7 @@ a {
     }
     &:hover {
         text-decoration: none;
-        color: #224488;
+        color: @blue_color;
 
         &:before,
         &:after {
@@ -62,7 +63,6 @@ a {
     &.roll-link {
         display: inline-block;
         overflow: hidden;
-
         vertical-align: top;
 
         -webkit-perspective: 600px;
@@ -79,7 +79,7 @@ a {
             text-decoration: none;
 
             span {
-                background: #224488;
+                background: @blue_color;
 
                 -webkit-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
                 -moz-transform: translate3d(0px, 0px, -30px) rotateX(90deg);
@@ -118,7 +118,7 @@ a {
                 padding: 0 2px;
 
                 color: #fff;
-                background: #224488;
+                background: @blue_color;
 
                 -webkit-transform-origin: 50% 0%;
                 -moz-transform-origin: 50% 0%;
@@ -164,14 +164,16 @@ section.index {
         font-size: 28px;
 
         &:hover {
-            -webkit-animation: shadow,animate .5s infinite alternate;
-            -moz-animation: shadow,animate .5s infinite alternate;
-            animation: shadow,animate .5s infinite alternate;
+            -webkit-animation: shadow, animate .5s infinite alternate;
+            -moz-animation: shadow, animate .5s infinite alternate;
+            -o-animation: shadow, animate .5s infinite alternate;
+            animation: shadow, animate .5s infinite alternate;
 
             &:before,
             &:after {
                 -webkit-animation: shadow 1s infinite alternate;
                 -moz-animation: shadow 1s infinite alternate;
+                -o-animation: shadow 1s infinite alternate;
                 animation: shadow 1s infinite alternate;
             }
         }
@@ -193,16 +195,72 @@ footer {
 section.qbbr {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 1px solid #999;
-    overflow: hidden;
     position: absolute;
     right: 45px;
     top: 45px;
 
-    img {
+    .avatar-wrapper {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &:after {
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5) inset;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+        }
+
+        &:hover img {
+            -webkit-animation: rotate 0.4s ease-out;
+            -moz-animation: rotate 0.4s ease-out;
+            -o-animation: rotate 0.4s ease-out;
+            animation: rotate 0.4s ease-out;
+        }
+
+        &:hover .tooltip { display: block; }
+
+        img {
+            width: 100px;
+            height: 100px;
+            -webkit-animation: rotateback 0.2s ease-out;
+            -moz-animation: rotateback 0.2s ease-out;
+            -o-animation: rotateback 0.2s ease-out;
+            animation: rotateback 0.2s ease-out;
+        }
+    }
+
+    .tooltip {
+        display: none;
+        font-size: 12px;
+        font-family: monospace;
+        width: 350px;
+        position: absolute;
+        top: 10px;
+        right: 125px;
+        background: black;
+        color: white;
+        padding: 5px;
+        border: 4px solid black;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, .1) 1px 1px 2px 0px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+            top: 22px;
+            right: -24px;
+        }
     }
 }
 
@@ -226,7 +284,7 @@ section.blog {
         background: #fff url(/images/dot.png) repeat-x 0 1.2em;
 
         &:hover time {
-            color: #224488;
+            color: @blue_color;
             border-bottom: 1px dotted #bbb;
         }
 
@@ -335,51 +393,61 @@ table.highlighttable .linenos {
 
 /* animation */
 @-webkit-keyframes shadow {
-    from {
-        text-shadow: 0 0 0 #555;
-    }
-    to {
-        text-shadow: 0 0 10px #555;
-    }
+    from { text-shadow: 0 0 0 #555; }
+    to   { text-shadow: 0 0 10px #555; }
 }
 @-moz-keyframes shadow {
-    from {
-        text-shadow: 0 0 0 #555;
-    }
-    to {
-        text-shadow: 0 0 10px #555;
-    }
+    from { text-shadow: 0 0 0 #555; }
+    to   { text-shadow: 0 0 10px #555; }
+}
+@-o-keyframes shadow {
+    from { text-shadow: 0 0 0 #555; }
+    to   { text-shadow: 0 0 10px #555; }
 }
 @keyframes shadow {
-    from {
-        text-shadow: 0 0 0 #555;
-    }
-    to {
-        text-shadow: 0 0 10px #555;
-    }
+    from { text-shadow: 0 0 0 #555; }
+    to   { text-shadow: 0 0 10px #555; }
 }
 
 @-webkit-keyframes animate {
-    from {
-        -webkit-transform: scale(1);
-    }
-    to {
-        -webkit-transform: scale(1.5);
-    }
+    from { -webkit-transform: scale(1); }
+    to   { -webkit-transform: scale(1.5); }
 }
 @-moz-keyframes animate {
-    from {
-        -moz-transform: scale(1);
-    }
-    to {
-        -moz-transform: scale(1.5);
-    }
+    from { -moz-transform: scale(1); }
+    to   { -moz-transform: scale(1.5); }
+}
+@-o-keyframes animate {
+    from { -o-transform: scale(1); }
+    to   { -o-transform: scale(1.5); }
 }
 @keyframes animate {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.5);
-    }
+    from { transform: scale(1); }
+    to   { transform: scale(1.5); }
+}
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(-360deg); }
+}
+@-moz-keyframes rotate {
+    0% { -moz-transform: rotate(-360deg); }
+}
+@-o-keyframes rotate {
+    0% { -o-transform: rotate(-360deg); }
+}
+@keyframes rotate {
+    0% { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes rotateback {
+    0% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotateback {
+    0% { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes rotateback {
+    0% { -o-transform: rotate(360deg); }
+}
+@keyframes rotateback {
+    0% { transform: rotate(360deg); }
 }
