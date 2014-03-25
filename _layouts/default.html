@@ -41,8 +41,8 @@
         <title>{{ site.name }} /{% if page.categories %} blog /{% endif %}{% if page.tag %} blog / tag / {{ page.tag }}{% else %} {{ page.title }}{% endif %}</title>
         <link rel="stylesheet" href="/stylesheets/syntax.css">
         <link rel="stylesheet" href="/stylesheets/main.css">
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <!--[if IE]>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/fucking-ie.css">
         <![endif]-->
     </head>
     <body{% if page.url == "/index.html" %} class="index"{% endif %}>
@@ -63,5 +63,24 @@
             ga('send', 'pageview');
         </script>
         {% endif %}
+
+        <!--noindex-->
+        <div class="fucking-ie">
+            <div class="content">
+                On your computer does not found Web Browser!<br>
+                Plz install it.
+                <br>
+                <a href="https://www.mozilla.org/firefox/" rel="nofollow">Firefox</a>
+                <br>
+                <a href="https://download-chromium.appspot.com/" rel="nofollow">Chromium</a>
+                <br>
+                <a href="https://www.google.ru/chrome/" rel="nofollow">Google Chrome</a>
+                <br>
+                <a href="https://www.apple.com/safari/" rel="nofollow">Safari</a>
+                <br>
+                <a href="https://www.opera.com/">Opera</a>
+            </div>
+        </div>
+        <!--/noindex-->
     </body>
 </html>

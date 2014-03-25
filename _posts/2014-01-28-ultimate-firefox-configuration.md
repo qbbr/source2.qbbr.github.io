@@ -54,6 +54,19 @@ geo.enabled;false
 browser.safebrowsing.remoteLookups;false
 # wow, wow... zond...
 browser.safebrowsing.malware.enabled;false
+# http://safebrowsing.clients.google.com/? O_o fuck u google!
+# fucking_google -> localhost
+browser.safebrowsing.malware.reportURL;http://localhost/fucking_google/
+browser.safebrowsing.reportMalwareURL;http://localhost/fucking_google/
+browser.safebrowsing.reportMalwareErrorURL;http://localhost/fucking_google/
+browser.safebrowsing.keyURL;https://localhost//fucking_google/
+browser.safebrowsing.gethashURL;http://localhost/fucking_google/
+browser.safebrowsing.updateURL;http://localhost/fucking_google/
+browser.safebrowsing.reportURL;http://localhost/fucking_google/
+# reports to localhost
+browser.safebrowsing.reportErrorURL;http://localhost/
+browser.safebrowsing.reportGenericURL;http://localhost/
+browser.safebrowsing.reportPhishURL;http://localhost/
 
 # do not track me plz
 privacy.donottrackheader.enabled;true
@@ -64,7 +77,7 @@ privacy.clearOnShutdown.cookies;true
 
 # turn off js access to resize w
 dom.disable_window_move_resize;true
-# f u dom storage
+# f u dom storage ([INFO]: n for feedly.com)
 dom.storage.enabled;false
 
 # no history
@@ -107,8 +120,12 @@ network.proxy.socks_remote_dns;true
 network.prefetch-next;false
 # enable pipelining (~+80% performans)
 network.http.pipelining;true
+network.http.pipelining.ssl;true
 network.http.proxy.pipelining;true
 network.http.pipelining.maxrequests;32
+
+# disable IPv6
+network.dns.disableIPv6;true
 
 # no auto refresh page
 accessibility.blockautorefresh;true

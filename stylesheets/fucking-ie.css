@@ -1,0 +1,26 @@
+.fucking-ie {
+    display: block !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+}
+    .fucking-ie .content {
+        background: black url(/images/ie.png) no-repeat left bottom;
+        padding-top: 10em;
+    }
+
+        .fucking-ie .content a {
+            color: #248;
+        }
+
+        .fucking-ie .content a:hover {
+            text-decoration: underline;
+        }
