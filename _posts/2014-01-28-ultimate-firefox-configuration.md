@@ -32,6 +32,10 @@ browser.newtabpage.enabled;false
 browser.newtab.url;about:blank
 # no tab animation
 browser.tabs.animate;false
+# no fullscreen animation
+browser.fullscreen.animateUp;0
+# no animation in panorama mode
+browser.panorama.animate_zoom;false
 # don`t save thumbnails
 browser.pagethumbnails.storage_version;0
 # no thumbnails on drag tab
@@ -104,7 +108,18 @@ network.cookie.cookieBehavior;3
 network.cookie.thirdparty.sessionOnly;true
 # oh, fuck off websockets
 network.websocket.enabled;false
-# warn me if external prot/url
+# disable expose protocol handler
+network.protocol-handler.expose.mailto;false
+network.protocol-handler.expose.news;false
+network.protocol-handler.expose.nntp;false
+network.protocol-handler.expose.nntp;false
+# disable external protocol handler
+network.protocol-handler.external-default;false
+network.protocol-handler.external.mailto;false
+network.protocol-handler.external.news;false
+network.protocol-handler.external.nntp;false
+network.protocol-handler.external.snews;false
+# warn me if external protocol has been used
 network.protocol-handler.warn-external-default;true
 network.protocol-handler.warn-external.file;true
 network.protocol-handler.warn-external.mailto;true
@@ -145,4 +160,7 @@ plugins.hide_infobar_for_missing_plugin;true
 plugin.scan.plid.all;false
 # start plugin after click
 plugins.click_to_play;true
+
+# always show http(s):// in urlbar
+browser.urlbar.trimURLs;false
 {% endhighlight %}
