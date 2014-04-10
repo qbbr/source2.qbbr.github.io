@@ -8,7 +8,13 @@ tags: [chromium, anonymous]
 
 ### chrom* is fucking big security hole!!! fuck u g00gle!
 
-Luke, security in chrom* its no possible, use [firefox]({% post_url 2014-01-28-ultimate-firefox-configuration %})
+Luke, security in chrom* its no possible, use firefox!
+
+### use
+
+{% highlight bash %}
+$ chromium --incognito --user-data-dir=/tmp/chrome
+{% endhighlight %}
 
 ### plugins
 
