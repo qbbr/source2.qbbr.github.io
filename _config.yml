@@ -5,6 +5,7 @@ keywords: blog, linux, debian, hacking, programming
 tag_page_layout: tag_page
 tag_page_dir: blog/tag
 permalink: /:categories/:title.html
+timezone: UTC
 
 exclude: [README.md, LICENSE]
 
