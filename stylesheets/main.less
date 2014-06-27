@@ -4,7 +4,7 @@
 .fucking-ie { display: none; }
 
 body {
-    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     margin: 0;
 
@@ -13,9 +13,10 @@ body {
     }
 }
 
-:focus {
-    outline: 0;
-}
+:focus { outline: 0; }
+
+h3 { font-size: 24px; }
+h4 { font-size: 16px; }
 
 header {
     line-height: normal;
@@ -331,16 +332,33 @@ section.blog-post {
     }
 
     div.post {
+        code {
+            font-family: terminus, "Lucida Console", Monaco, monospace;
+            background-color: #efefef;
+            border: 1px dotted #bbb;
+            padding: 1px 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
         pre {
             margin: 1em 0;
             background-color: #eee;
             border: 1px dotted #bbb;
             overflow: auto;
             padding: 5px;
-            -webkit-box-shadow: rgba(0,0,0,0.07) 0 1px 2px inset;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px inset;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px inset;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;
+
+            code {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+            }
         }
 
         a {
