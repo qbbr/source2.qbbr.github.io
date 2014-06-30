@@ -6,9 +6,9 @@ layout: default
                 <h1><a href="/">qbbr<span>.io</span></a> / <a href="/blog/">blog</a></h1>
             </header>
 
-            <article itemscope itemtype="http://schema.org/Article">
-                <h2>
-                    <a href="{{ page.url }}">
+            <article itemscope itemtype="http://schema.org/BlogPosting">
+                <h2 itemprop="headline">
+                    <a itemprop="url" href="{{ page.url }}">
                         <span itemprop="name">{{ page.title }}</span>
                     </a>
                 </h2>
@@ -19,8 +19,11 @@ layout: default
                     Tags: <span itemprop="keywords">{{ page | tags }}</span>
                 </div>
 
-                <div>
-                    Author: <a href="https://google.com/+InnokentySokolov/?rel=author" rel="author">Innokenty Sokolov</a>
+                <div itemprop="author" itemscope itemptype="http://schema.org/Person">
+                    Author:
+                    <a href="https://google.com/+InnokentySokolov/?rel=author" itemprop="url" rel="author">
+                        <span itemprop="name">Innokenty Sokolov</span>
+                    </a>
                 </div>
 
                 <div>

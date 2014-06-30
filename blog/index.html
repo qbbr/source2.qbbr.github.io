@@ -2,14 +2,14 @@
 layout: default
 title: blog
 ---
-        <section class="blog">
+        <section itemscope itemtype="http://schema.org/Blog" class="blog">
             <header>
                 <h1><a href="/">qbbr<span>.io</span></a> / <a href="/blog/">blog</a></h1>
             </header>
 
             {% for post in site.posts do %}
-            <article itemscope itemtype="http://schema.org/Article">
-                <h2>
+            <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+                <h2 itemprop="headline">
                     <a href="{{ post.url }}" class="roll-link" itemprop="url">
                         <span itemprop="name" data-title="{{ post.title }}">{{ post.title }}</span>
                     </a>
