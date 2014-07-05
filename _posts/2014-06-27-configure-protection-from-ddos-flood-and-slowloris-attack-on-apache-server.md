@@ -86,7 +86,7 @@ SecRuleEngine On
 ### enable apache modules
 
 {% highlight bash %}
-$ a2enmod headers mod-evasive mod-security
+$ a2enmod unique_id mod-evasive mod-security
 $ /etc/init.d/apache2 restart
 {% endhighlight %}
 
