@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "configure dkim and spf on production mailter"
+title:  "configure dkim and spf for exim on production mailter"
 date:   2014-08-16 13:18:00
 categories: blog
 tags: [linux, debian, exim, mail, dns, dkim, spf]
