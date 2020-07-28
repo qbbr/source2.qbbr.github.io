@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
+# ./build
+#
+# a simple static site/blog generator
+#
 # depends: pandoc, envsubst
+# author: @qbbr
 
 VIEW_DIR="views"
 OUTPUT_DIR="output"
