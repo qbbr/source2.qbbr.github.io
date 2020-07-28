@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+
+# depends: pandoc, envsubst
+
+VIEW_DIR="views"
+OUTPUT_DIR="output"
+
+export _site_="qbbr.io"
+export _title_=""
+export _header_=""
+export _page_=""
+export _content_=""
+export _current_year_="$(date +'%Y')"
+export _extra_stylesheet_=""
+
+rm -rf ${OUTPUT_DIR}
+mkdir -p ${OUTPUT_DIR}
+cp -r static/* ${OUTPUT_DIR}/
+posts=()
+
+build_post() {
+	filename="$(basename "${1%.*}")"
+	_page_="blog"
+	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"
+	_extra_stylesheet_='<link rel="stylesheet" href="/css/highlight.css">'
+	export _year_=$(echo ${filename} | cut -d '-' -f1)
+	export _month_=$(echo ${filename} | cut -d '-' -f2)
+	export _day_=$(echo ${filename} | cut -d '-' -f3)
+	export _name_=$(echo ${filename} | cut -d '-' -f4-)
+	_title_="${_site_} / blog / ${name}"
+	export _url_="/blog/${_year_}/${_month_}/${_day_}/${_name_}.html"
+	_name_="$(echo ${_name_} | sed 's/-/ /g')"
+	_content_="$(pandoc -t html5 --highlight-style=tango ${1})"
+	_content_="$(envsubst < "${VIEW_DIR}/post.html")"
+	mkdir -p "${OUTPUT_DIR}$(dirname "${_url_}")"
+	envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_DIR}${_url_}" # post
+
+	html_posts_item=$(envsubst < "${VIEW_DIR}/posts_item.html")
+	posts+=("$html_posts_item") # for build_posts
+}
+
+build_posts() {
+	 _page_="blog"
+	_title_="${_site_} / ${_page_}"
+	_extra_stylesheet_=""
+	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"
+	_content_=""
+
+	for (( i=${#posts[@]}-1 ; i>=0 ; i-- )) ; do # reverse list
+		_content_="${_content_}${posts[$i]}"
+	done
+
+	_content_="$(envsubst < "${VIEW_DIR}/posts.html")"
+	envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_DIR}/blog/index.html"
+}
+
+build_page() {
+	if [[ "${1}" == "index" ]]; then
+		_title_="${_site_}"
+		header="header_index.html"
+		PAGE_DIR="${OUTPUT_DIR}"
+	else
+		_page_="${1}"
+		_title_="${_site_} / ${_page_}"
+		header="header_page.html"
+		PAGE_DIR="${OUTPUT_DIR}/${1}"
+		mkdir -p "${PAGE_DIR}"
+	fi
+
+	_extra_stylesheet_=""
+	_header_="$(envsubst < "${VIEW_DIR}/${header}")"
+	_content_="$(envsubst < "${VIEW_DIR}/${1}.html")"
+	envsubst < "${VIEW_DIR}/base.html" > "${PAGE_DIR}/index.html"
+}
+
+# @decorator
+build() {
+	echo -n "$(tput setaf 3)building$(tput sgr0) ${2##*/} ..."
+	${1} ${2}
+	echo " $(tput setaf 2)ok$(tput sgr0)"
+}
+
+build build_page "index"
+build build_page "about"
+
+if [[ "${1##*.}" == "md" ]]; then
+	build build_post ${1} # build one file
+else
+	for post in posts/*; do # build all md files
+		build build_post ${post}
+	done
+
+	build build_posts "posts"
+fi
