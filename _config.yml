@@ -1,6 +1,6 @@
 name: qbbr.io
 pygments: true
-description: personal blog about linux (debian), hacking and programming
+description: a personal blog about linux (debian), hacking and programming
 keywords: blog, linux, debian, hacking, programming
 tag_page_layout: tag_page
 tag_page_dir: blog/tag
