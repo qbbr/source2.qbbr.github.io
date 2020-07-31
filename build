@@ -32,7 +32,7 @@ build_post() {
 	export _month_=$(echo ${filename} | cut -d '-' -f2)
 	export _day_=$(echo ${filename} | cut -d '-' -f3)
 	export _name_=$(echo ${filename} | cut -d '-' -f4-)
-	_title_="${_site_} / blog / ${name}"
+	_title_="${_site_} / blog / ${_name_}"
 	export _url_="/blog/${_year_}/${_month_}/${_day_}/${_name_}.html"
 	_name_="$(echo ${_name_} | sed 's/-/ /g')"
 	_content_="$(pandoc -t html5 --highlight-style=tango ${1})"
