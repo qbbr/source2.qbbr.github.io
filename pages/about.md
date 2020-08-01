@@ -1,3 +1,13 @@
+## **#** self
+
+<div class="ava"><div class="wrap">![qbbr](/img/qbbr-ava.jpg)<!-- nofig --><div class="border"></div></div></div>
+
+Hi! My name is Sokolov Innokenty.
+I've been programming since 2003.
+Started with Pascal/VBA at school, then learn PHP4 + HTML/CSS, then Perl, JS, then ... and i do not stop studying to this day...
+I'm sitting on holy GNU/Linux since 2006, system administrating since 2010.
+Now I mainly write for WEB.
+
 ## **#** skills
 
  - Programming Languages  
@@ -38,6 +48,9 @@
    - C/C++
    - SQL
    - AWK
+   - Pascal
+   - VBA *(Visual Basic for Applications)*
+   - BASIC
    - <del>Fucking «1C»</del>
    - Brainfuck
  - Databases

@@ -69,9 +69,45 @@ time {
     }
 
 .page-about {
+    text-align: center;
 }
 
-    .page-about ul {}
+    .page-about p {
+        text-align: justify;
+    }
+
+    .page-about .ava {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+        .page-about .ava .wrap {
+            text-align: center;
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            line-height: 0;
+            position: relative;
+        }
+
+            .page-about .ava img {
+                /*border-radius: 50%;*/
+                max-width: 100%;
+                height: auto;
+            }
+
+            .page-about .ava .border {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border: 3px solid #002b36;
+                border-radius: 50%;
+            }
+
+    .page-about ul { text-align: left; }
     .page-about ul > li { font-weight: 800;  }
     .page-about ul > li em { font-weight: 300; }
     .page-about ul > li > ul > li { font-weight: 600; }
