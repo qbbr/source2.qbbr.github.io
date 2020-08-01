@@ -11,6 +11,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
+hr {
+    height: 0;
+    font-size: 0;
+    border: none;
+    border-top: 1px dotted #bbb;
+}
+
 a[href] {
     text-decoration: none;
     color: #002b36;
@@ -52,14 +59,24 @@ time {
 /*
  * index.html
  */
-.index {
+.page-index {
     text-align: center;
 }
 
-    .index h2 {
+    .page-index h2 {
         display: inline-block;
         font-weight: 300;
     }
+
+.page-about {
+}
+
+    .page-about ul {}
+    .page-about ul > li { font-weight: 800;  }
+    .page-about ul > li em { font-weight: 300; }
+    .page-about ul > li > ul > li { font-weight: 600; }
+    .page-about ul > li > ul > li > ul > li { font-weight: 400; }
+    .page-about ul > li > ul > li > ul > li > ul > li { font-weight: 300; }
 
 /*
  * base.html

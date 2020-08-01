@@ -7,8 +7,11 @@
 # depends: pandoc, envsubst
 # author: @qbbr
 
-VIEW_DIR="views"
 OUTPUT_DIR="output"
+PAGES_DIR="pages"
+POSTS_DIR="posts"
+STATIC_DIR="static"
+VIEW_DIR="views"
 
 export _site_="qbbr.io"
 export _title_=""
@@ -20,7 +23,7 @@ export _extra_stylesheet_=""
 
 rm -rf ${OUTPUT_DIR}
 mkdir -p ${OUTPUT_DIR}
-cp -r static/* ${OUTPUT_DIR}/
+cp -r ${STATIC_DIR}/* ${OUTPUT_DIR}/
 posts=()
 
 build_post() {
@@ -60,22 +63,24 @@ build_posts() {
 }
 
 build_page() {
+	_page_="${1}"
+
 	if [[ "${1}" == "index" ]]; then
 		_title_="${_site_}"
 		header="header_index.html"
-		PAGE_DIR="${OUTPUT_DIR}"
+		OUTPUT_PAGE_DIR="${OUTPUT_DIR}"
 	else
-		_page_="${1}"
 		_title_="${_site_} / ${_page_}"
 		header="header_page.html"
-		PAGE_DIR="${OUTPUT_DIR}/${1}"
-		mkdir -p "${PAGE_DIR}"
+		OUTPUT_PAGE_DIR="${OUTPUT_DIR}/${1}"
+		mkdir -p "${OUTPUT_PAGE_DIR}"
 	fi
 
 	_extra_stylesheet_=""
 	_header_="$(envsubst < "${VIEW_DIR}/${header}")"
-	_content_="$(envsubst < "${VIEW_DIR}/${1}.html")"
-	envsubst < "${VIEW_DIR}/base.html" > "${PAGE_DIR}/index.html"
+	_content_="$(pandoc -t html5 "${PAGES_DIR}/${1}.md")"
+	_content_="$(envsubst < "${VIEW_DIR}/page_content_wrapper.html")"
+	envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_PAGE_DIR}/index.html"
 }
 
 # @decorator

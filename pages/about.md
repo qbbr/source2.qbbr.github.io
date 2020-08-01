@@ -1,0 +1,83 @@
+## **#** skills
+
+ - Programming Languages  
+   *(Design Patterns, OOP/SOLID, KISS/YAGNI, 12-Factor App)*
+   - PHP 5/7
+     - Symfony 2/3/4+
+     - Zend 1/2
+     - ORM: Doctrine, Propel
+     - Composer / Packagist
+   - Python 2/3
+     - Flask
+     - Django
+   - JavaScript *(ECMAScript 3/5/6)*
+     - CoffeScript
+     - VanilaJS
+     - ExtJS Sencha
+     - VueJS
+     - jQuery
+     - Gulp / Grunt / Webpack / Npm / Yarn
+   - HTML5 / CSS3
+     - Components
+     - BEM *(Block Element Modifier)*
+     - Twitter Bootstrap 3/4
+     - ZURB Foundation for Sites / Emails
+     - Preprocessors: SASS / SCSS / LESS
+   - Java
+     - Android SDK
+   - Shells
+     - bash *(GNU Bourne-Again SHell)*
+     - dash *(Debian Almquist shell)*
+     - zsh *(The Z shell)*
+   - Perl 5
+   - Ruby
+   - Tcl
+     - Tk
+   - Lua
+   - VimL
+   - C/C++
+   - SQL
+   - AWK
+   - <del>Fucking «1C»</del>
+   - Brainfuck
+ - Databases
+   - Relational *(RDB)*
+     - PostgreSQL
+     - MySQL
+       - MariaDB
+       - Percona
+     - SQLite
+   - Non-Relational *(NoSQL)*
+     - MongoDB
+     - Redis
+     - Elasticsearch
+     - CouchDB
+     - Tarantool
+ - Message Queuing
+   - RabbitMQ
+   - MQTT
+ - Search Engines
+   - Sphinx
+   - Elasticsearch
+   - Lucene
+   - Postgres Text Search *(tsvector, tsquery)*
+ - Version Control Systems
+   - Git
+     - GitLab
+       - CI / CD *(Continuous Integration / Continuous Delivery)*
+     - GitHub
+   - SVN *(Subversion)*
+   - CVS *(Concurrent Versions Systems)*
+ - Monitoring Systems
+   - Netdata
+   - Zabbix
+ - Operating Systems
+    - GNU/Linux
+    - OpenSolaris
+    - Darwin
+    - DOS
+    - Windows
+ - Microcontrollers Programming
+   - Atmel AVR *(Arduino like)*
+   - Espressif Systems *(ESP8266 / ESP32)*
+   - PIC

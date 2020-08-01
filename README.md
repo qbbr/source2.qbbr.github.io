@@ -6,10 +6,11 @@ a simple static site/blog generator written on [bash](build)
 
 ## overview
 
+ * output/ - output dir with compiled site
+ * pages/ - for page content (md)
  * posts/ - for blog posts in markdown style (format: year-month-day-post_name.md)
  * static/ - for auto copy contents to output dir (css, img, favicon)
  * views/ - for templates/layouts (html)
- * output/ - output dir with compiled site
 
 ## build
 
