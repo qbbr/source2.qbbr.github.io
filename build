@@ -21,6 +21,12 @@ export _content_=""
 export _current_year_="$(date +'%Y')"
 export _extra_stylesheet_=""
 
+if [[ "$*" =~ "--no-ansi" ]]; then
+	tput() {
+		echo
+	}
+fi
+
 rm -rf ${OUTPUT_DIR}
 mkdir -p ${OUTPUT_DIR}
 cp -r ${STATIC_DIR}/* ${OUTPUT_DIR}/
@@ -48,7 +54,7 @@ build_post() {
 }
 
 build_posts() {
-	 _page_="blog"
+	_page_="blog"
 	_title_="${_site_} / ${_page_}"
 	_extra_stylesheet_=""
 	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"

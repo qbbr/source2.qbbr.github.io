@@ -13,7 +13,7 @@ jobs:
     - name: Install depends
       run: sudo apt-get install pandoc
     - name: Build
-      run: ./build
+      run: ./build --no-ansi
     - name: Deploy to qbbr.github.io
       uses: peaceiris/actions-gh-pages@v3
       with:
