@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
+    - name: Install depends
+      run: sudo apt-get install pandoc
     - name: Build
       run: ./build
     - name: Deploy to qbbr.github.io
