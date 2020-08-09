@@ -17,7 +17,7 @@ file `~/.config/php/autoload.php`:
 ```php
 <?php
 
-require $_SERVER['HOME'].'/.config/composer/vendor/autoload.php';
+require getenv('HOME').'/.config/composer/vendor/autoload.php';
 require __DIR__.'/var_dumper_server.php';
 ```
 
