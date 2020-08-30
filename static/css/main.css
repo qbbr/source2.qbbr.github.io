@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     color: #073642;
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 0 .5em;
     max-width: 40em;
 }
 
@@ -90,6 +90,7 @@ time {
     .page-about ul > li > ul > li > ul > li { font-weight: 400; }
     .page-about ul > li > ul > li > ul > li > ul > li { font-weight: 300; }
 
+
 /*
  * base.html
  */
@@ -157,7 +158,7 @@ footer {
     .posts a {
         white-space: nowrap;
         font-size: 1.2em;
-        margin-left: .5em;
+        /*margin-left: .5em;*/
         display: block;
     }
 
@@ -276,6 +277,10 @@ article {}
 
     header .s2 {
         display: block;
+    }
+
+    .posts li {
+        font-size: 1rem;
     }
 
     article .post a.img img {
