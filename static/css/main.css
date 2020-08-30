@@ -223,9 +223,34 @@ article {}
         border-bottom: 1px dotted #bbb;
     }
 
-    article .post img {
-        max-width: 100%;
-    }
+        article .post a.img {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            border-bottom: none;
+        }
+
+        article .post a.img::before {
+            content: none;
+        }
+
+        article .post a.img::after {
+            content: none;
+        }
+
+        article .post a.img img {
+            max-width: 100%;
+            border-width: 2px;
+            border-style: solid;
+            border-color: white;
+            transition: all .2s;
+            filter: grayscale(100%);
+        }
+
+        article .post a.img:hover img {
+            border-color: #268bd2;
+            filter: grayscale(0%);
+        }
 
     .date {
         text-align: center;
@@ -275,5 +300,9 @@ article {}
 
     header .s2 {
         display: block;
+    }
+
+    article .post a.img img {
+        filter: unset;
     }
 }
