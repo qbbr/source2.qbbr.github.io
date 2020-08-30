@@ -1,4 +1,4 @@
-[![qbbr-colorful-ls-with-awk](https://i.imgur.com/1ACbGFn.png)](https://i.imgur.com/1ACbGFn.png)
+![qbbr-colorful-ls-with-awk](https://i.imgur.com/2WAUYmK.png)
 
 ```bash
 ls -lA --color=always | \
