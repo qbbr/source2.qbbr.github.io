@@ -1,6 +1,6 @@
 ## **#** self
 
-<div class="ava"><div class="wrap">![qbbr](/img/qbbr-ava.jpg)<!-- nofig --><div class="border"></div></div></div>
+![qbbr](/img/qbbr-ava.jpg){.ava}<!-- nofig -->
 
 Hi! My name is Sokolov Innokenty.
 I've been programming since 2003.
