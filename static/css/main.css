@@ -223,6 +223,10 @@ article {}
         border-bottom: 1px dotted #bbb;
     }
 
+    article .post img {
+        max-width: 100%;
+    }
+
     .date {
         text-align: center;
     }
