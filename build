@@ -12,6 +12,7 @@ PAGES_DIR="pages"
 POSTS_DIR="posts"
 STATIC_DIR="static"
 VIEW_DIR="views"
+TMP_DIR="tmp"
 
 export _site_="qbbr.io"
 export _title_=""
@@ -20,6 +21,7 @@ export _page_=""
 export _content_=""
 export _current_year_="$(date +'%Y')"
 export _extra_stylesheet_=""
+export _footer_source_=""
 
 if [[ "$*" =~ "--no-ansi" ]]; then
 	tput() {
@@ -27,12 +29,14 @@ if [[ "$*" =~ "--no-ansi" ]]; then
 	}
 fi
 
+mkdir -p ${TMP_DIR}
 rm -rf ${OUTPUT_DIR}
 mkdir -p ${OUTPUT_DIR}
 cp -r ${STATIC_DIR}/* ${OUTPUT_DIR}/
 posts=()
 
 build_post() {
+	# $1 - filepath
 	filename="$(basename "${1%.*}")"
 	_page_="blog"
 	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"
@@ -44,11 +48,24 @@ build_post() {
 	export _url_="/blog/${_year_}/${_month_}/${_day_}/${_name_}.html"
 	_name_="$(echo ${_name_} | sed 's/-/ /g')"
 	_title_="${_site_} / blog / ${_name_}"
+	export _taglist_=""
+	# for build_tags
+	taglist="$(grep 'tags:' "$1" | head -n1 | sed -r 's/tags:\ ?\[(.*)\]/\1/' | sed -r 's/,/ /g' | sed -r 's/\ +/ /g')"
+	if [[ -n "${taglist}" ]]; then
+		for tag in $taglist; do
+			_taglist_+="<a href="/blog/tags/${tag}.html">${tag}</a>"
+			echo "$_url_ $_name_" >> "${TMP_DIR}/${tag}"
+		done
+	fi
+
 	_content_="$(pandoc -t html5 --highlight-style=tango ${1})"
 	_content_="$(envsubst < "${VIEW_DIR}/post.html")"
 	mkdir -p "${OUTPUT_DIR}$(dirname "${_url_}")"
+	export _filename_="${filename}"
+	_footer_source_="$(envsubst < "${VIEW_DIR}/footer_source.html")"
 	envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_DIR}${_url_}" # post
 
+	# for build_posts
 	html_posts_item=$(envsubst < "${VIEW_DIR}/posts_item.html")
 	posts+=("$html_posts_item") # for build_posts
 }
@@ -57,15 +74,34 @@ build_posts() {
 	_page_="blog"
 	_title_="${_site_} / ${_page_}"
 	_extra_stylesheet_=""
+	_footer_source_=""
 	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"
 	_content_=""
-
 	for (( i=${#posts[@]}-1 ; i>=0 ; i-- )) ; do # reverse list
 		_content_="${_content_}${posts[$i]}"
 	done
-
 	_content_="$(envsubst < "${VIEW_DIR}/posts.html")"
 	envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_DIR}/blog/index.html"
+}
+
+build_tags() {
+	_page_="blog"
+	_extra_stylesheet_=""
+	_footer_source_=""
+	mkdir -p "${OUTPUT_DIR}/blog/tags/"
+	for tagfile in ${TMP_DIR}/*; do
+		export _tag_="$(basename "${tagfile%.*}")"
+		_title_="${_site_} / ${_page_} / tags / ${_tag_}"
+		_content_=""
+		while IFS= read -r line; do
+			export _url_="$(echo "$line" | cut -d ' ' -f1)"
+			export _name_="$(echo "${line}" | cut -d ' ' -f2-)"
+			_content_="${_content_}$(envsubst < "${VIEW_DIR}/tags_item.html")"
+		done < "${tagfile}"
+		_content_="$(envsubst < "${VIEW_DIR}/tags.html")"
+		envsubst < "${VIEW_DIR}/base.html" > "${OUTPUT_DIR}/blog/tags/${_tag_}.html"
+	done
+	rm -rf ${TMP_DIR}
 }
 
 build_page() {
@@ -83,6 +119,7 @@ build_page() {
 	fi
 
 	_extra_stylesheet_=""
+	_footer_source_=""
 	_header_="$(envsubst < "${VIEW_DIR}/${header}")"
 	_content_="$(pandoc -t html5 "${PAGES_DIR}/${1}.md")"
 	_content_="$(envsubst < "${VIEW_DIR}/page_content_wrapper.html")"
@@ -101,10 +138,13 @@ build build_page "about"
 
 if [[ "${1##*.}" == "md" ]]; then
 	build build_post ${1} # build one file
+	build build_posts "posts"
+	build build_tags "tags"
 else
 	for post in posts/*; do # build all md files
 		build build_post ${post}
 	done
 
 	build build_posts "posts"
+	build build_tags "tags"
 fi

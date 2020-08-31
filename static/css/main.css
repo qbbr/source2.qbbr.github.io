@@ -68,6 +68,10 @@ time {
         font-weight: 300;
     }
 
+
+/*
+ * about/index.html
+ */
 .page-about {
     text-align: center;
 }
@@ -229,7 +233,8 @@ article {}
             filter: grayscale(0%);
         }
 
-    .date {
+    article .date,
+    article .tags {
         text-align: center;
     }
 
@@ -258,7 +263,12 @@ article {}
 
 
 /*
- * media query
+ * tags.html / tag_item.html (same as .posts)
+ */
+
+
+/*
+ * media queries
  */
 @media print {
     body {
