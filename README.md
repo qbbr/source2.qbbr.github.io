@@ -22,7 +22,7 @@ a simple static site/blog generator written on [bash](build)
 
  * [pandoc](https://command-not-found.com/pandoc) - convert markdown to html \w code highlight
  * [envsubst](https://command-not-found.com/envsubst) - simple template helper (gettext package)
-
+ * [tidy](https://www.html-tidy.org/)
 
 ## local web server
 
