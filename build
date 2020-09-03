@@ -133,6 +133,10 @@ build() {
 	echo " $(tput setaf 2)ok$(tput sgr0)"
 }
 
+tidyhtml() {
+	find ${OUTPUT_DIR} -name '*.html' -exec tidy -w 0 -i --indent-spaces 4 --tidy-mark no --quiet yes -m {} \;
+}
+
 build build_page "index"
 build build_page "about"
 
@@ -148,3 +152,5 @@ else
 	build build_posts "posts"
 	build build_tags "tags"
 fi
+
+build tidyhtml "tidy html"
