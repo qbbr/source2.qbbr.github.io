@@ -20,6 +20,7 @@ Now I mainly write for WEB.
    - Python 2/3
      - Flask
      - Django
+     - SQLAlchemy
    - JavaScript *(ECMAScript 3/5/6)*
      - CoffeScript
      - VanilaJS
@@ -40,6 +41,7 @@ Now I mainly write for WEB.
      - dash *(Debian Almquist shell)*
      - zsh *(The Z shell)*
    - Perl 5
+     - Mojolicious
    - Ruby
    - Tcl
      - Tk
