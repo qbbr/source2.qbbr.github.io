@@ -4,7 +4,7 @@
 #
 # a simple static site/blog generator
 #
-# depends: pandoc, envsubst
+# depends: pandoc, envsubst, tidy
 # author: @qbbr
 
 OUTPUT_DIR="output"
