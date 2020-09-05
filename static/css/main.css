@@ -3,7 +3,7 @@ body {
     font-weight: 300;
     color: #073642;
     margin: 0 auto;
-    padding: 0 .5em;
+    padding: 0 1em;
     max-width: 40em;
 }
 
@@ -78,8 +78,8 @@ time {
 
     .page-about p {
         text-align: justify;
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .page-about img.ava {
@@ -89,12 +89,12 @@ time {
         margin: 0 auto;
     }
 
-    .page-about ul { text-align: left; }
-    .page-about ul > li { font-weight: 800;  }
-    .page-about ul > li em { font-weight: 300; }
-    .page-about ul > li > ul > li { font-weight: 600; }
-    .page-about ul > li > ul > li > ul > li { font-weight: 400; }
-    .page-about ul > li > ul > li > ul > li > ul > li { font-weight: 300; }
+    .page-about > ul { text-align: left; padding-left: 1em; }
+    .page-about > ul > li { font-weight: 800;  }
+    .page-about > ul > li em { font-weight: 300; }
+    .page-about > ul > li > ul > li { font-weight: 600; }
+    .page-about > ul > li > ul > li > ul > li { font-weight: 400; }
+    .page-about > ul > li > ul > li > ul > li > ul > li { font-weight: 300; }
 
 
 /*
@@ -157,39 +157,43 @@ footer {
         color: #002b36;
     }
 
-    .posts li {
-        position: relative;
+    .posts ol {
+        padding-left: 1.6em;
     }
 
-    .posts a {
-        white-space: nowrap;
-        font-size: 1.2em;
-        /*margin-left: .5em;*/
-        display: block;
-    }
+        .posts li {
+            position: relative;
+        }
 
-    .posts a::before {
-        content: "# ";
-        font-weight: 300;
-    }
+        .posts a {
+            white-space: nowrap;
+            font-size: 1.2em;
+            /*margin-left: .5em;*/
+            display: block;
+        }
 
-    .posts a::after {
-        content: none;
-    }
+        .posts a::before {
+            content: "# ";
+            font-weight: 300;
+        }
 
-    .posts time {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: white;
-        padding-left: 1em;
-        line-height: 1.944em;
-        transition: color .2s;
-    }
+        .posts a::after {
+            content: none;
+        }
 
-    /*.posts li:hover time {*/
-    /*    color: #002b36;*/
-    /*}*/
+        .posts time {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: white;
+            padding-left: 1em;
+            line-height: 1.944em;
+            transition: color .2s;
+        }
+
+        /*.posts li:hover time {*/
+        /*    color: #002b36;*/
+        /*}*/
 
 
 /*

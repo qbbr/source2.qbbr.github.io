@@ -15,18 +15,16 @@ Now I mainly write for WEB.
      - Symfony 2/3/4+
      - Zend 1/2
      - ORM: Doctrine, Propel
-     - Composer / Packagist
    - Python 2/3
      - Flask
      - Django
      - SQLAlchemy
    - JavaScript *(ECMAScript 3/5/6)*
-     - CoffeScript
-     - VanilaJS
+     - <del>CoffeScript</del> VanilaJS
      - ExtJS Sencha
      - VueJS
      - jQuery
-     - Gulp / Grunt / Webpack / Npm / Yarn
+     - Gulp / Grunt / Webpack
    - HTML5 / CSS3
      - Components
      - BEM *(Block Element Modifier)*
@@ -35,6 +33,7 @@ Now I mainly write for WEB.
      - Preprocessors: SASS / SCSS / LESS
    - Java
      - Android SDK
+     - Spring
    - Shells
      - bash *(GNU Bourne-Again SHell)*
      - dash *(Debian Almquist shell)*
@@ -42,13 +41,14 @@ Now I mainly write for WEB.
    - Perl 5
      - Mojolicious
    - Ruby
+     - Ruby on Rails
+   - SQL
    - Tcl
      - Tk
    - Lua
    - VimL
-   - C/C++
-   - SQL
    - AWK
+   - C/C++ *(for MK only)*
    - Pascal
    - VBA *(Visual Basic for Applications)*
    - BASIC
@@ -80,6 +80,7 @@ Now I mainly write for WEB.
      - GitLab
        - CI / CD *(Continuous Integration / Continuous Delivery)*
      - GitHub
+       - Actions (CI / CD)
    - SVN *(Subversion)*
    - CVS *(Concurrent Versions Systems)*
  - Monitoring Systems
