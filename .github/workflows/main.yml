@@ -11,7 +11,10 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
     - name: Install depends
-      run: sudo apt-get install pandoc tidy
+      run: |
+        sudo apt-get install pandoc tidy
+        pandoc --version
+        apt show pandoc -a
     - name: Build
       run: ./build --no-ansi
     - name: Deploy to qbbr.github.io

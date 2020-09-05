@@ -10,8 +10,7 @@ Now I mainly write for WEB.
 
 ## **#** skills
 
-- Programming Languages  
-  *(Design Patterns, OOP/SOLID, KISS/YAGNI, 12-Factor App)*
+- Programming Languages<br>*(Design Patterns, OOP/SOLID, KISS/YAGNI, 12-Factor App)*
   - PHP 5/7
     - Symfony 2/3/4+
     - Zend 1/2
@@ -87,11 +86,11 @@ Now I mainly write for WEB.
   - Netdata
   - Zabbix
 - Operating Systems
-   - GNU/Linux
-   - OpenSolaris
-   - Darwin
-   - DOS
-   - Windows
+  - GNU/Linux
+  - OpenSolaris
+  - Darwin
+  - DOS
+  - Windows
 - Microcontrollers Programming
   - Atmel AVR *(Arduino like)*
   - Espressif Systems *(ESP8266 / ESP32)*

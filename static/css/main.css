@@ -78,8 +78,8 @@ time {
 
     .page-about p {
         text-align: justify;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .page-about img.ava {
