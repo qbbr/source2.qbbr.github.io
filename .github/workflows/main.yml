@@ -12,16 +12,17 @@ jobs:
       uses: actions/checkout@v2
     - name: Install depends
       run: |
-        sudo apt-get install pandoc tidy
-        pandoc --version
-        apt show pandoc -a
-    - name: Build
-      run: ./build --no-ansi
-    - name: Deploy to qbbr.github.io
-      uses: peaceiris/actions-gh-pages@v3
+        sudo apt-get install tidy
+    - uses: docker://thomasweise/docker-pandoc
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        external_repository: qbbr/qbbr.github.io
-        publish_branch: master
-        publish_dir: ./output
+        args: ./build --no-ansi
+    #- name: Build
+    #  run: ./build --no-ansi
+    #- name: Deploy to qbbr.github.io
+    #  uses: peaceiris/actions-gh-pages@v3
+    #  with:
+    #    deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+    #    external_repository: qbbr/qbbr.github.io
+    #    publish_branch: master
+    #    publish_dir: ./output
 
