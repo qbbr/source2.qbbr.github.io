@@ -13,12 +13,13 @@ jobs:
     - name: Install depends
       run: |
         sudo apt-get install tidy
-    - uses: docker://dalibo/pandocker
+        wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.10.1/pandoc-2.10.1-1-amd64.deb
+        sudo dpkg -i pandoc.deb
+    #- uses: docker://dalibo/pandocker
     - name: Build
       run: |
-        alias pandoc="docker run --rm -u `id -u`:`id -g` -v `pwd`:/pandoc dalibo/pandocker"
         pandoc --version
-        #./build --no-ansi
+        ./build --no-ansi
     #- name: Deploy to qbbr.github.io
     #  uses: peaceiris/actions-gh-pages@v3
     #  with:
