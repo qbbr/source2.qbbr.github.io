@@ -15,16 +15,15 @@ jobs:
         sudo apt-get install tidy
         wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.10.1/pandoc-2.10.1-1-amd64.deb
         sudo dpkg -i pandoc.deb
-    #- uses: docker://dalibo/pandocker
     - name: Build
       run: |
         pandoc --version
         ./build --no-ansi
-    #- name: Deploy to qbbr.github.io
-    #  uses: peaceiris/actions-gh-pages@v3
-    #  with:
-    #    deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-    #    external_repository: qbbr/qbbr.github.io
-    #    publish_branch: master
-    #    publish_dir: ./output
+    - name: Deploy to qbbr.github.io
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        external_repository: qbbr/qbbr.github.io
+        publish_branch: master
+        publish_dir: ./output
 
