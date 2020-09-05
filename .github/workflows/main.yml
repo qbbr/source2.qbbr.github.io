@@ -13,11 +13,11 @@ jobs:
     - name: Install depends
       run: |
         sudo apt-get install tidy
-    - uses: docker://thomasweise/docker-pandoc
-      with:
-        args: ./build --no-ansi
-    #- name: Build
-    #  run: ./build --no-ansi
+    - uses: docker://dalibo/pandocker
+    - name: Build
+      run: |
+        alias pandoc="docker run --rm -u `id -u`:`id -g` -v `pwd`:/pandoc dalibo/pandocker"
+        ./build --no-ansi
     #- name: Deploy to qbbr.github.io
     #  uses: peaceiris/actions-gh-pages@v3
     #  with:
