@@ -17,7 +17,8 @@ jobs:
     - name: Build
       run: |
         alias pandoc="docker run --rm -u `id -u`:`id -g` -v `pwd`:/pandoc dalibo/pandocker"
-        ./build --no-ansi
+        pandoc --version
+        #./build --no-ansi
     #- name: Deploy to qbbr.github.io
     #  uses: peaceiris/actions-gh-pages@v3
     #  with:
