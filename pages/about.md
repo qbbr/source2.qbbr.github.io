@@ -20,7 +20,7 @@ Now I mainly write for WEB.
      - Django
      - SQLAlchemy
    - JavaScript *(ECMAScript 3/5/6)*
-     - <del>CoffeScript</del> VanilaJS
+     - <del>CoffeScript</del> VanillaJS
      - ExtJS Sencha
      - VueJS
      - jQuery
