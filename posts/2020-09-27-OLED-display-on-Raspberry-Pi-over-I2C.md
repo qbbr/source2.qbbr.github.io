@@ -2,12 +2,13 @@
 tags: [linux, raspberrypi, python]
 ---
 
-**links:**
-[Raspberry Pi Wiki](https://en.wikipedia.org/wiki/Raspberry_Pi)
-[Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
-[GPIO usage](https://www.raspberrypi.org/documentation/usage/gpio/)
-[driver for SSD1306/SSD1305 OLED](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306)
-[SSD1306 datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+links:
+
+ * [Raspberry Pi Wiki](https://en.wikipedia.org/wiki/Raspberry_Pi)
+ * [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
+ * [GPIO usage](https://www.raspberrypi.org/documentation/usage/gpio/)
+ * [driver for SSD1306/SSD1305 OLED](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306)
+ * [SSD1306 datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 
 ## my hw
 
@@ -131,6 +132,7 @@ def draw_line(text):
     global line
     draw.text((0, font_height * line), text, font=font, fill=255)
     line = line + 1
+    #print(text)
 
 
 def shell(cmd):
