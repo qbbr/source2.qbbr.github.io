@@ -244,6 +244,27 @@ article {}
             filter: grayscale(0%);
         }
 
+        article .post table {
+            border-collapse: collapse;
+        }
+
+            article .post table th,
+            article .post table td {
+                padding: .3em;
+                border-left: 1px dotted #bbb;
+                border-right: 1px dotted #bbb;
+            }
+
+            article .post table th:first-child,
+            article .post table td:first-child {
+                border-left: none;
+            }
+
+            article .post table th:last-child,
+            article .post table td:last-child {
+                border-right: none;
+            }
+
     article .date,
     article .tags {
         text-align: center;
