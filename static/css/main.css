@@ -255,6 +255,10 @@ article {}
                 border-right: 1px dotted #bbb;
             }
 
+            article .post table td {
+                border-top: 1px dotted #bbb;
+            }
+
             article .post table th:first-child,
             article .post table td:first-child {
                 border-left: none;
