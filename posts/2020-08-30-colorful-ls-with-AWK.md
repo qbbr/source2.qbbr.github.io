@@ -1,3 +1,7 @@
+---
+tags: [linux, awk]
+---
+
 [![qbbr-colorful-ls-with-awk](/img/blog/qbbr-colorful-ls-with-awk.png)](/img/blog/qbbr-colorful-ls-with-awk.png){.img}<!-- nofig -->
 
 ```bash
