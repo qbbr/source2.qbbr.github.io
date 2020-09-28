@@ -2,15 +2,9 @@
 tags: [linux, raspberrypi, python]
 ---
 
-links:
+[![qbbr-raspberry-pi-oled-display](/img/blog/qbbr-raspberry-pi-oled-display.jpg)](/img/blog/qbbr-raspberry-pi-oled-display.jpg){.img}<!-- nofig -->
 
- * [Raspberry Pi Wiki](https://en.wikipedia.org/wiki/Raspberry_Pi)
- * [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
- * [GPIO usage](https://www.raspberrypi.org/documentation/usage/gpio/)
- * [driver for SSD1306/SSD1305 OLED](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306)
- * [SSD1306 datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
-
-## my hw
+### my hw
 
 Display: **OLED SSD1306 128x64 (4 pins)**
 
@@ -25,7 +19,7 @@ cat /etc/os-release | grep PRETTY_NAME
 #> Raspbian GNU/Linux 10 (buster)
 ```
 
-## upgrade to latest Raspbian and install python3
+### upgrade to latest Raspbian and install python3
 
 ```bash
 sudo apt update
@@ -44,7 +38,7 @@ pip3 --version
 #> pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
 ```
 
-## enable i2c on kernel
+### enable i2c on kernel
 
 ```bash
 sudo raspi-config
@@ -56,7 +50,7 @@ cat /etc/modules | grep i2c
 sudo reboot
 ```
 
-## connect OLED to Raspberry
+### connect OLED to Raspberry
 
 !!! use 3V (PIN 1), not 5V (PIN 2, PIN 4), its more safely for OLED.
 
@@ -67,7 +61,7 @@ sudo reboot
 | GPIO 3 (PIN 5)    | SCL  |
 | GPIO 2 (PIN 3)    | SDA  |
 
-## test i2c
+### test i2c
 
 ```bash
 # check i2c-dev
@@ -89,14 +83,14 @@ i2cdetect -y 1
 #i2cdetect -y 0
 ```
 
-## install SSD1306 driver
+### install SSD1306 driver
 
 ```bash
 sudo pip3 install adafruit-circuitpython-ssd1306
 sudo apt install python3-pil
 ```
 
-## write code
+### write code
 
 oled_stats.py:
 
@@ -181,7 +175,7 @@ chmod +x oled_stats.py
 #> CONTAINERS: 10/10
 ```
 
-## run on boot
+### run on boot
 
 add to `/etc/rc.local`:
 
@@ -189,4 +183,12 @@ add to `/etc/rc.local`:
 ./home/pi/oled_stats.py &
 ```
 
-## enjoy!
+enjoy!
+
+### links
+
+ * [Raspberry Pi Wiki](https://en.wikipedia.org/wiki/Raspberry_Pi)
+ * [Raspberry Pi 2 Model B](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)
+ * [GPIO usage](https://www.raspberrypi.org/documentation/usage/gpio/)
+ * [driver for SSD1306/SSD1305 OLED](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306)
+ * [SSD1306 datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
