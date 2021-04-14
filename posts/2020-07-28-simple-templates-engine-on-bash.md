@@ -1,3 +1,7 @@
+---
+tags: [linux, bash]
+---
+
 great for generating cfg/rc from template
 
 ### template

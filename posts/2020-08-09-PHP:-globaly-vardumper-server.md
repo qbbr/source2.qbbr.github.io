@@ -1,3 +1,7 @@
+---
+tags: [symfony, php]
+---
+
 ### installation && configure
 
 [Symfony VarDumper Component](https://symfony.com/doc/current/components/var_dumper.html)

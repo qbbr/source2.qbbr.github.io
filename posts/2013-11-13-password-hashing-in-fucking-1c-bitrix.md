@@ -15,5 +15,5 @@ salt = bitrix_hash[:8]          # YRvaAG943
 password_hash = bitrix_hash[8:] # c67fe179077109cb0587c2c93a167c6
 
 if md5(salt + raw_password) == password_hash:
-	print(True)
+    print(True)
 ```
