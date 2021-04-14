@@ -11,8 +11,8 @@ Now I mainly write for WEB.
 ## **#** skills
 
  - Programming Languages<br>*(Design Patterns, OOP/SOLID, KISS/YAGNI, 12-Factor App)*
-   - PHP 5/7
-     - Symfony 2/3/4+
+   - PHP 5/7/8
+     - Symfony 2/3/4/5
      - Zend 1/2
      - ORM: Doctrine, Propel
    - Python 2/3
