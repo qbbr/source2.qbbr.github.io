@@ -285,7 +285,7 @@ article {}
 
     code {
         font-family: terminus, "Lucida Console", Monaco, monospace;
-        font-size: 16px;
+        /*font-size: 16px;*/
         background-color: #eee;
         padding: .25em;
         border: 1px dotted #bbb;
