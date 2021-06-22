@@ -20,6 +20,7 @@ export _header_=""
 export _page_=""
 export _content_=""
 export _current_year_="$(date +'%Y')"
+export _generated_datetime_="$(date)"
 export _extra_stylesheet_=""
 export _footer_source_=""
 
