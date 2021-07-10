@@ -30,9 +30,9 @@ a simple static site/blog generator written on [bash](build)
 cd output/
 
 # start web server
-busybox httpd -f -p 8666
+php -S 127.0.0.1:8666
 # or use one of way:
-#php -S 127.0.0.1:8666
+#busybox httpd -f -p 8666
 #python -m http.server 8666
 #python2 -m SimpleHTTPServer 8666
 #ruby -r webrick -e 'WEBrick::HTTPServer.new(:Port => 8666, :DocumentRoot => Dir.pwd).start'
