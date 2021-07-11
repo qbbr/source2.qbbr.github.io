@@ -90,7 +90,7 @@ hr {
     height: 0;
     font-size: 0;
     border: none;
-    border-top: 1px dotted var(--color-base01);
+    border-top: 1px dashed var(--color-base01);
 }
 
 a {
@@ -183,7 +183,7 @@ header {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 2.5em;
-        border-bottom: 1px dotted var(--color-base01);
+        border-bottom: 1px dashed var(--color-base01);
         padding-top: 1em;
         padding-bottom: 1em;
     }
@@ -211,7 +211,7 @@ footer {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    border-top: 1px dotted var(--color-base01);
+    border-top: 1px dashed var(--color-base01);
 }
 
     footer a {
@@ -353,12 +353,12 @@ article {}
             article .post table th,
             article .post table td {
                 padding: .3em;
-                border-left: 1px dotted var(--color-base01);
-                border-right: 1px dotted var(--color-base01);
+                border-left: 1px dashed var(--color-base01);
+                border-right: 1px dashed var(--color-base01);
             }
 
             article .post table td {
-                border-top: 1px dotted var(--color-base01);
+                border-top: 1px dashed var(--color-base01);
             }
 
             article .post table th:first-child,
@@ -381,7 +381,7 @@ article {}
         line-height: 1.1;
         background-color: var(--color-base02);
         padding: .25em;
-        border: 1px dotted var(--color-base01);
+        border: 1px dashed var(--color-base01);
         /*border-radius: 3px;*/
     }
 
@@ -390,7 +390,7 @@ article {}
         /*font-size: 16px;*/
         background-color: var(--color-base02);
         padding: .25em;
-        border: 1px dotted var(--color-base01);
+        border: 1px dashed var(--color-base01);
         /*border-radius: 3px;*/
         white-space: nowrap;
     }
