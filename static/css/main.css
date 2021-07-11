@@ -325,7 +325,7 @@ article {}
     }
 
     code {
-        font-family: terminus, Monaco, monospace;
+        font-family: ui-monospace, terminus, SFMono-Regular, SF Mono, Consolas, Liberation Mono, Menlo, monospace;
         /*font-size: 16px;*/
         background-color: var(--color-base02);
         padding: .25em;
@@ -380,41 +380,3 @@ article {}
         filter: unset;
     }
 }
-
-/*@media (prefers-color-scheme: dark) {*/
-/*    body {*/
-/*        background-color: #002b36;*/
-/*        color: #C9D1D9;*/
-/*    }*/
-
-/*    hr {*/
-/*        border-color: #073642;*/
-/*    }*/
-
-/*    a {*/
-/*        color: #C9D1D9;*/
-/*    }*/
-
-/*    a::before,*/
-/*    a::after {*/
-/*        color: #002b36;*/
-/*    }*/
-
-/*    a:hover::before,*/
-/*    a:hover::after,*/
-/*    a:focus::before,*/
-/*    a:focus::after {*/
-/*        color: #C9D1D9;*/
-/*    }*/
-
-/*    footer,*/
-/*    header h1 {*/
-/*        border-color: #073642;*/
-/*    }*/
-/*    header span {*/
-/*        color: #268bd2;*/
-/*    }*/
-/*    header a:hover span {*/
-/*        color: #C9D1D9;*/
-/*    }*/
-/*}*/
