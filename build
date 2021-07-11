@@ -48,7 +48,7 @@ build_post() {
 	export _name_=$(echo ${filename} | cut -d '-' -f4-)
 	export _url_="/blog/${_year_}/${_month_}/${_day_}/${_name_}.html"
 	_name_="$(echo ${_name_} | sed 's/-/ /g')"
-	_title_="${_site_} / blog / ${_name_}"
+	_title_="${_name_} / blog / ${_site_}"
 	export _taglist_=""
 	# for build_tags
 	taglist="$(grep 'tags:' "$1" | head -n1 | sed -r 's/tags:\ ?\[(.*)\]/\1/' | sed -r 's/,/ /g' | sed -r 's/\ +/ /g')"
@@ -73,7 +73,7 @@ build_post() {
 
 build_posts() {
 	_page_="blog"
-	_title_="${_site_} / ${_page_}"
+	_title_="${_page_} / ${_site_}"
 	_extra_stylesheet_=""
 	_footer_source_=""
 	_header_="$(envsubst < "${VIEW_DIR}/header_page.html")"
@@ -92,7 +92,7 @@ build_tags() {
 	mkdir -p "${OUTPUT_DIR}/blog/tags/"
 	for tagfile in ${TMP_DIR}/*; do
 		export _tag_="$(basename "${tagfile%.*}")"
-		_title_="${_site_} / ${_page_} / tags / ${_tag_}"
+		_title_="${_tag_} / tags / ${_page_} / ${_site_}"
 		_content_=""
 		while IFS= read -r line; do
 			export _url_="$(echo "$line" | cut -d ' ' -f1)"
@@ -113,7 +113,7 @@ build_page() {
 		header="header_index.html"
 		OUTPUT_PAGE_DIR="${OUTPUT_DIR}"
 	else
-		_title_="${_site_} / ${_page_}"
+		_title_="${_page_} / ${_site_}"
 		header="header_page.html"
 		OUTPUT_PAGE_DIR="${OUTPUT_DIR}/${1}"
 		mkdir -p "${OUTPUT_PAGE_DIR}"
