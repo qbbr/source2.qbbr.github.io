@@ -276,6 +276,7 @@ footer {
                     font-size: 1.2em;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    padding-right: 1em;
                 }
 
                     .posts a::before {
@@ -289,7 +290,6 @@ footer {
 
                 .posts time {
                     background-color: var(--color-base03);
-                    padding-left: 1em;
                     transition: color .2s;
                 }
 
