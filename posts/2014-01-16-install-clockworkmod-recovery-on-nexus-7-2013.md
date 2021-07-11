@@ -1,6 +1,6 @@
 ---
 tags: [nexus_7, android, clockworkmod]
-author: @qbbr
+author: qbbr
 ---
 
 ### install fastboot tool

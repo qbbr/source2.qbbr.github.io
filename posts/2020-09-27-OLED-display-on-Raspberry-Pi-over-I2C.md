@@ -1,6 +1,6 @@
 ---
 tags: [linux, raspberrypi, python]
-author: @qbbr
+author: qbbr
 ---
 
 [![qbbr-raspberry-pi-oled-display](/img/blog/qbbr-raspberry-pi-oled-display.jpg)](/img/blog/qbbr-raspberry-pi-oled-display.jpg){.img}<!-- nofig -->

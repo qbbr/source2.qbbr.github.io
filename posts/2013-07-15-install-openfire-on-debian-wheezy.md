@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, openfire, java, xmpp]
-author: @qbbr
+author: qbbr
 ---
 
 ### install java:

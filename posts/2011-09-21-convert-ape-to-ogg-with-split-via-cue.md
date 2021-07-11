@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, multimedia, ape, ogg, cue]
-author: @qbbr
+author: qbbr
 ---
 
 ### install (debian):

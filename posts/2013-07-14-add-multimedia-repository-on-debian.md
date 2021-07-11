@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, multimedia]
-author: @qbbr
+author: qbbr
 ---
 
 ### install (debian):

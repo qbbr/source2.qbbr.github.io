@@ -1,6 +1,6 @@
 ---
 tags: [linux, bash, android, adb]
-author: @qbbr
+author: qbbr
 ---
 
 ### install adb

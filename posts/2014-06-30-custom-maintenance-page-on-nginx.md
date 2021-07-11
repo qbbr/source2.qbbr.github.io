@@ -1,6 +1,6 @@
 ---
 tags: [linux, nginx]
-author: @qbbr
+author: qbbr
 ---
 
 ### configure

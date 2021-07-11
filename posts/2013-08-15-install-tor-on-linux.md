@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, tor, anonymous]
-author: @qbbr
+author: qbbr
 ---
 
 ### install tor

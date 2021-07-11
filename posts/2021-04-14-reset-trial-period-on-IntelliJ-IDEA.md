@@ -1,6 +1,6 @@
 ---
 tags: [linux, IntelliJ, hack]
-author: @qbbr
+author: qbbr
 ---
 
 ```bash

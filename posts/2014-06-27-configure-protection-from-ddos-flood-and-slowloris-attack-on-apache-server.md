@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, apache, security, ddos]
-author: @qbbr
+author: qbbr
 ---
 
 ### mod_evasive

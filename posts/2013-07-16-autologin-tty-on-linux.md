@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, getty, tty]
-author: @qbbr
+author: qbbr
 ---
 
 ### install (debian):

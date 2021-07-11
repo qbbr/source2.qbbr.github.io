@@ -1,6 +1,6 @@
 ---
 tags: [linux, iptables, ddos, sysctl]
-author: @qbbr
+author: qbbr
 ---
 
 ### ICMP flood protection

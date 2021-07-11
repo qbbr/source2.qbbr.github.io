@@ -1,6 +1,6 @@
 ---
 tags: [linux, php, symfony2]
-author: @qbbr
+author: qbbr
 ---
 
 ### install:

@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, ppa]
-author: @qbbr
+author: qbbr
 ---
 
 ### install:

@@ -1,6 +1,6 @@
 ---
 tags: [php, symfony2]
-author: @qbbr
+author: qbbr
 ---
 
 src/Acme/DemoBundle/EventListener/AcmeKernelListener.php:

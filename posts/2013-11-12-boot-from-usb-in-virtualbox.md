@@ -1,6 +1,6 @@
 ---
 tags: [linux, virtualbox, usb]
-author: @qbbr
+author: qbbr
 ---
 
 ### create VM disk (.vmdk)

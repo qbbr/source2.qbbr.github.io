@@ -1,6 +1,6 @@
 ---
 tags: [linux, iptables, ssh]
-author: @qbbr
+author: qbbr
 ---
 
 ### configure:

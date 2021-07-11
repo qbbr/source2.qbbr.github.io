@@ -1,6 +1,6 @@
 ---
 tags: [linux, less]
-author: @qbbr
+author: qbbr
 ---
 
 ### install

@@ -1,6 +1,6 @@
 ---
 tags: [symfony, php]
-author: @qbbr
+author: qbbr
 ---
 
 ### installation && configure

@@ -1,6 +1,6 @@
 ---
 tags: [linux, bash]
-author: @qbbr
+author: qbbr
 ---
 
 great for generating cfg/rc from template

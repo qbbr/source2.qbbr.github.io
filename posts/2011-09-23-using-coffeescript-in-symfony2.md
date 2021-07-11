@@ -1,6 +1,6 @@
 ---
 tags: [linux, php, symfony2, coffeescript]
-author: @qbbr
+author: qbbr
 ---
 
 ### install (node.js + npm required):

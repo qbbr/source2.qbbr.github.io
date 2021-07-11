@@ -1,6 +1,6 @@
 ---
 tags: [php, 1c-bitrix, md5]
-author: @qbbr
+author: qbbr
 ---
 
 ### T_T

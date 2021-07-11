@@ -1,6 +1,6 @@
 ---
 tags: [linux, network]
-author: @qbbr
+author: qbbr
 ---
 
 ### configure kernel

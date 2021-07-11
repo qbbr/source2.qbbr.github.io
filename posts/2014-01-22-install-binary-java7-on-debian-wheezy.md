@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, java]
-author: @qbbr
+author: qbbr
 ---
 
 ### configure

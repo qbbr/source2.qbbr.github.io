@@ -1,6 +1,6 @@
 ---
 tags: [linux, debian, nginx, spdy, pagespeed]
-author: @qbbr
+author: qbbr
 ---
 
 ### install dependencies

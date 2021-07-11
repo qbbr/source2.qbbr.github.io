@@ -1,6 +1,6 @@
 ---
 tags: [zte_open, firefoxos, clockworkmod]
-author: @qbbr
+author: qbbr
 ---
 
 ### install adb
