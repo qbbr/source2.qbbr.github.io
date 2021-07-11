@@ -1,16 +1,4 @@
 :root {
-    /* bg tones */
-    --color-base03: #fdf6e3;
-    --color-base02: #eee8d5;
-    /* content tones */
-    --color-base01: #93a1a1;
-    --color-base00: #839496;
-    --color-base0: #657b83;
-    --color-base1: #586e75;
-    /* bg tones */
-    --color-base2: #073642;
-    --color-base3: #002b36;
-
     /* accent colors */
     --color-yellow: #b58900;
     --color-orange: #cb4b16;
@@ -22,20 +10,32 @@
     --color-green: #859900;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* bg tones */
-        --color-base03: #002b36;
-        --color-base02: #073642;
-        /* content tones */
-        --color-base01: #586e75;
-        --color-base00: #657b83;
-        --color-base0: #839496;
-        --color-base1: #93a1a1;
-        /* bg tones */
-        --color-base2: #eee8d5;
-        --color-base3: #fdf6e3;
-    }
+[data-theme="light"] {
+    /* bg tones */
+    --color-base03: #fdf6e3;
+    --color-base02: #eee8d5;
+    /* content tones */
+    --color-base01: #93a1a1;
+    --color-base00: #839496;
+    --color-base0: #657b83;
+    --color-base1: #586e75;
+    /* bg tones */
+    --color-base2: #073642;
+    --color-base3: #002b36;
+}
+
+[data-theme="dark"] {
+    /* bg tones */
+    --color-base03: #002b36;
+    --color-base02: #073642;
+    /* content tones */
+    --color-base01: #586e75;
+    --color-base00: #657b83;
+    --color-base0: #839496;
+    --color-base1: #93a1a1;
+    /* bg tones */
+    --color-base2: #eee8d5;
+    --color-base3: #fdf6e3;
 }
 
 body {
@@ -50,6 +50,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
+    color: var(--color-base2);
 }
 
 hr {
@@ -61,7 +62,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: var(--color-base01);
+    color: var(--color-base2);
     transition: color .2s;
 }
 
@@ -131,9 +132,9 @@ time {
     }
 
     .page-about > ul { text-align: left; padding-left: 1em; }
-    .page-about > ul > li { font-weight: 800;  }
+    .page-about > ul > li { font-weight: 800; color: var(--color-base1); }
     .page-about > ul > li em { font-weight: 300; }
-    .page-about > ul > li > ul > li { font-weight: 600; }
+    .page-about > ul > li > ul > li { font-weight: 600; color: var(--color-base0); }
     .page-about > ul > li > ul > li > ul > li { font-weight: 400; }
     .page-about > ul > li > ul > li > ul > li > ul > li { font-weight: 300; }
 
@@ -160,7 +161,7 @@ header {
         }
 
         header a:hover span {
-            color: var(--color-base01);
+            color: var(--color-base2);
         }
 
         header .s2 {
@@ -194,11 +195,11 @@ footer {
     .posts h2 {
         font-weight: 300;
         text-align: center;
-        color: var(--color-base03);
+        /*color: var(--color-base03);*/
     }
 
     .posts ol {
-        padding-left: 1.6em;
+        padding-left: 1.8em;
     }
 
         .posts li {
@@ -231,9 +232,9 @@ footer {
             transition: color .2s;
         }
 
-        /*.posts li:hover time {*/
-        /*    color: #002b36;*/
-        /*}*/
+        .posts li:hover time {
+            color: var(--color-base00);
+        }
 
 
 /*
