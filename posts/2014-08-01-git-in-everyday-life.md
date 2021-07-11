@@ -1,5 +1,6 @@
 ---
 tags: [linux, git]
+author: @qbbr
 ---
 
 ### configure

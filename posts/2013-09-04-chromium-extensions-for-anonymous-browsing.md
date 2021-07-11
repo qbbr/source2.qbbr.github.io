@@ -1,5 +1,6 @@
 ---
 tags: [chromium, anonymous]
+author: @qbbr
 ---
 
 ### chrom* is fucking big security hole!!! fuck u g00gle!

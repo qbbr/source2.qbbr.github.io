@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, network, wireless, iptables]
+author: @qbbr
 ---
 
 ### 1) configure wireless adapter

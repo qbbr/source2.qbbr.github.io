@@ -1,5 +1,6 @@
 ---
 tags: [firefox, anonymous, security]
+author: @qbbr
 ---
 
 ### plugins

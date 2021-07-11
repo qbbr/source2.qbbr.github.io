@@ -1,5 +1,6 @@
 ---
 tags: [linux, mount, uuid]
+author: @qbbr
 ---
 
 get uuid for all device:

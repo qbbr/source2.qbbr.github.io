@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, exim, mail, dns, dkim, spf]
+author: @qbbr
 ---
 
 ### SPF (Sender Policy Framework)

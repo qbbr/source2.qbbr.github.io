@@ -1,5 +1,6 @@
 ---
 tags: [linux, awk]
+author: @qbbr
 ---
 
 [![qbbr-colorful-ls-with-awk](/img/blog/qbbr-colorful-ls-with-awk.png)](/img/blog/qbbr-colorful-ls-with-awk.png){.img}<!-- nofig -->

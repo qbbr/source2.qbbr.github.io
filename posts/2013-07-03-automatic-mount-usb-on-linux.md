@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, mount, usb]
+author: @qbbr
 ---
 
 ### install

@@ -1,5 +1,6 @@
 ---
 tags: [linux, usb, virtualbox]
+author: @qbbr
 ---
 
 ### configure

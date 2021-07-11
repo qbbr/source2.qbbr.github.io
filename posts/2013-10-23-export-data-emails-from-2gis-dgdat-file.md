@@ -1,5 +1,6 @@
 ---
 tags: [2gis, dgdat, xor, hacking]
+author: @qbbr
 ---
 
 ### download latest 2gis db for ur city

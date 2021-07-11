@@ -1,5 +1,6 @@
 ---
 tags: [linux, network, ifconfig]
+author: @qbbr
 ---
 
 ```bash

@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, multimedia, iso.wv, ogg, cue]
+author: @qbbr
 ---
 
 ### install (debian):

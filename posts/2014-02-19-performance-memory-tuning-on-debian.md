@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, sysctl]
+author: @qbbr
 ---
 
 ### cat /etc/sysctl.d/memory.conf

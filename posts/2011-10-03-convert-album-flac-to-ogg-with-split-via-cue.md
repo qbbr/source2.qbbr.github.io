@@ -1,5 +1,6 @@
 ---
 tags: [linux, debian, multimedia, flac, ogg, cue]
+author: @qbbr
 ---
 
 ### install (debian):

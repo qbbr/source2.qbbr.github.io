@@ -1,5 +1,6 @@
 ---
 tags: [php, symfony2, twig]
+author: @qbbr
 ---
 
 1) [create kernel event listener](2013-10-21-symfony2-create-kernel-event-listener)
