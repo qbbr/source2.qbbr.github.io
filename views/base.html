@@ -30,7 +30,7 @@
                                                            `~\  |
 -->
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
     <head>
         <title>${_title_}</title>
         <meta charset="utf-8">
@@ -67,17 +67,22 @@ ${_content_}
                 </small>
             </div>
             <div><small>&copy; ${_current_year_} <a href="/">${_site_}</a></small></div>
-            <a href="javascript:;" id="theme-switcher-btn">switch theme</a>
+            <!--noindex-->
+            <div>
+                <small><a href="javascript:;" id="theme-switcher-btn" class="theme-switcher-btn"></a></small>
+            </div>
+            <!--/noindex-->
         </footer>
 
         <script>
             const QBBR = {
                 MODE_KEY: 'theme',
+                DATA_THEME: 'data-theme',
                 setTheme(mode) {
-                    document.documentElement.setAttribute('data-theme', mode);
+                    document.documentElement.setAttribute(this.DATA_THEME, mode);
                 },
                 getTheme() {
-                    return document.documentElement.getAttribute('data-theme');
+                    return document.documentElement.getAttribute(this.DATA_THEME);
                 },
                 innvertMode(mode) {
                     return mode === 'dark' ? 'light' : 'dark';
