@@ -220,7 +220,7 @@ footer {
 
     footer a::before,
     footer a::after {
-        content: unset;
+        content: none;
         font-weight: unset;
     }
 
@@ -231,9 +231,6 @@ footer {
             background-position: right;
             padding-right: 20px;
             color: var(--color-base00);
-        }
-        a.theme-switcher-btn::after::after {
-            content: "xD";
         }
 
         [data-theme="dark"] a.theme-switcher-btn::after {
@@ -257,7 +254,7 @@ footer {
     .posts h2 {
         font-weight: 300;
         text-align: center;
-        /*color: var(--color-base03);*/
+        color: var(--color-base1);
     }
 
     .posts ol {
@@ -265,38 +262,40 @@ footer {
     }
 
         .posts li {
-            position: relative;
         }
 
-        .posts a {
-            white-space: nowrap;
-            font-size: 1.2em;
-            /*margin-left: .5em;*/
-            display: block;
-        }
+            .posts li div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+            }
 
-        .posts a::before {
-            content: "# ";
-            font-weight: 300;
-        }
+                .posts a {
+                    white-space: nowrap;
+                    font-size: 1.2em;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
 
-        .posts a::after {
-            content: none;
-        }
+                    .posts a::before {
+                        content: "# ";
+                        font-weight: 300;
+                    }
 
-        .posts time {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background-color: var(--color-base03);
-            padding-left: 1em;
-            line-height: 1.944em;
-            transition: color .2s;
-        }
+                    .posts a::after {
+                        content: none;
+                    }
 
-        .posts li:hover time {
-            color: var(--color-base00);
-        }
+                .posts time {
+                    background-color: var(--color-base03);
+                    padding-left: 1em;
+                    transition: color .2s;
+                }
+
+                .posts li:hover time {
+                    color: var(--color-base00);
+                }
 
 
 /*
