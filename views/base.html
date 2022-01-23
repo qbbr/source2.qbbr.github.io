@@ -83,12 +83,6 @@ ${_content_}
                     document.documentElement.setAttribute(this.DATA_THEME, mode);
                 },
                 getTheme() {
-                    return document.documentElement.getAttribute(this.DATA_THEME);
-                },
-                innvertMode(mode) {
-                    return mode === 'dark' ? 'light' : 'dark';
-                },
-                getTheme() {
                     let theme = this.getFromLocalStorage();
 
                     if (!theme) {
@@ -96,6 +90,9 @@ ${_content_}
                     }
 
                     return theme;
+                },
+                innvertMode(mode) {
+                    return mode === 'dark' ? 'light' : 'dark';
                 },
                 getFromLocalStorage() {
                     return localStorage.getItem(this.MODE_KEY);
