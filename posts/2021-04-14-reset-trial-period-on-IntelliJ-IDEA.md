@@ -10,3 +10,6 @@ find ~/.config/JetBrains/IntelliJIdea*/options -name 'other.xml' -exec sed -i '/
 find ~/.java/* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} \;
 rm -rf ~/.java/.userPrefs/jetbrains/idea/
 ```
+
+only just for fun clear intellij trash...  
+NOT FOR GHM$ DMCA!!!
