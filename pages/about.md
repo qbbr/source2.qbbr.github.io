@@ -96,3 +96,9 @@ Now I mainly write for WEB.
    - Atmel AVR *(Arduino like)*
    - Espressif Systems *(ESP8266 / ESP32)*
    - PIC
+ - Security Audit / BugBounty
+   - Pentesting
+   - WEB
+     - CSRF / XSS / SQLinj
+   - Reverse Engineering / Hardware Hacking
+   - IOT Audit
