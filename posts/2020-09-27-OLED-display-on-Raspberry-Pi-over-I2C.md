@@ -1,5 +1,5 @@
 ---
-tags: [linux, raspberrypi, python]
+tags: [linux, raspberrypi, python, hardware]
 author: qbbr
 ---
 

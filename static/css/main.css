@@ -371,6 +371,15 @@ article {}
             filter: grayscale(100%);
         }
 
+        article .post a.img.img-half {
+            width: 50%;
+            display: inline-block !important;
+        }
+
+        article .post a.img.top-fix {
+            margin-top: -13px;
+        }
+
         article .post a.img:hover img {
             border-color: var(--color-blue);
             filter: grayscale(0%);
