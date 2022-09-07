@@ -1,5 +1,5 @@
 ---
-tags: [hack, hardware, code grabber]
+tags: [hack, hardware, code-grabber]
 author: qbbr
 ---
 
