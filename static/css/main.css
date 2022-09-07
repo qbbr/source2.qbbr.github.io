@@ -244,6 +244,36 @@ footer {
             }
         }
 
+    footer .peace-no-war {
+        display: inline-block;
+        margin-top: 5px;
+        cursor: help;
+        user-select: none;
+    }
+
+        footer .peace-no-war span {
+            padding: 5px;
+        }
+
+        footer .peace-no-war .peace {
+            background-color: #0057B7;
+            color: white;
+        }
+
+        footer .peace-no-war .no-war {
+            background-color: #FFD700;
+            color: black;
+        }
+
+    footer .peace-no-war:hover .peace {
+        background-color: #FFD700;
+        color: black;
+    }
+    footer .peace-no-war:hover .no-war {
+        background-color: #0057B7;
+        color: white;
+    }
+
 
 /*
  * posts.html / posts_item.html
