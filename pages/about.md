@@ -4,7 +4,7 @@
 
 Hi! My name is Sokolov Innokenty.
 I've been programming since 2003.
-Started with Pascal/VBA at school, then learn PHP4 + HTML/CSS, then Perl, JS, then ... and i do not stop studying to this day...
+Started with Pascal/VBA at school, then learn PHP4 + HTML/CSS, then Perl, JS, then ... and i do not stop studying to this day (kaizen)...
 I'm sitting on holy GNU/Linux since 2006, system administrating since 2010.
 Now I mainly write for WEB.
 
@@ -35,9 +35,7 @@ Now I mainly write for WEB.
      - Android SDK
      - Spring
    - Shells
-     - bash *(GNU Bourne-Again SHell)*
-     - dash *(Debian Almquist shell)*
-     - zsh *(The Z shell)*
+     - sh / bash / dash / zsh
    - Perl 5
      - Mojolicious
    - Ruby
