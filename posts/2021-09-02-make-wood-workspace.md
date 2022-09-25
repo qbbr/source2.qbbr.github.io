@@ -7,23 +7,69 @@ author: qbbr
 
 ### `./configure model --file 'qbbr-table.skp'`
 
-[![qbbr-table-1](/img/blog/wood-workspace/1-qbbr-table-render.jpg)](/img/blog/wood-workspace/1-qbbr-table-render.jpg){.img .img-half}<!-- nofig -->[![qbbr-table-2](/img/blog/wood-workspace/2-qbbr-table-render.jpg)](/img/blog/wood-workspace/2-qbbr-table-render.jpg){.img .img-half}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-table-1](/img/blog/wood-workspace/1-qbbr-table-render.jpg)](/img/blog/wood-workspace/1-qbbr-table-render.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-table-2](/img/blog/wood-workspace/2-qbbr-table-render.jpg)](/img/blog/wood-workspace/2-qbbr-table-render.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 ### `make build --with /dev/hands --exclude /dev/ass`
 
-[![qbbr-table-3](/img/blog/wood-workspace/3-qbbr-table-work.jpg)](/img/blog/wood-workspace/3-qbbr-table-work.jpg){.img .img-half}<!-- nofig -->[![qbbr-table-4](/img/blog/wood-workspace/4-qbbr-table-work.jpg)](/img/blog/wood-workspace/4-qbbr-table-work.jpg){.img .img-half}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-table-3](/img/blog/wood-workspace/3-qbbr-table-work.jpg)](/img/blog/wood-workspace/3-qbbr-table-work.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-table-4](/img/blog/wood-workspace/4-qbbr-table-work.jpg)](/img/blog/wood-workspace/4-qbbr-table-work.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 ### `make install && echo 'done'`
 
-[![qbbr-table-5](/img/blog/wood-workspace/5-qbbr-table-done.jpg)](/img/blog/wood-workspace/5-qbbr-table-done.jpg){.img .img-half}<!-- nofig -->[![qbbr-table-6](/img/blog/wood-workspace/6-qbbr-table-done.jpg)](/img/blog/wood-workspace/6-qbbr-table-done.jpg){.img .img-half}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-table-5](/img/blog/wood-workspace/5-qbbr-table-done.jpg)](/img/blog/wood-workspace/5-qbbr-table-done.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-table-6](/img/blog/wood-workspace/6-qbbr-table-done.jpg)](/img/blog/wood-workspace/6-qbbr-table-done.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 ## build telephone-station
 
-[![qbbr-telephone-station-1](/img/blog/wood-workspace/qbbr-telephone-station-render.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-render.jpg){.img .img-half}<!-- nofig -->[![qbbr-telephone-station-2](/img/blog/wood-workspace/qbbr-telephone-station-work.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-work.jpg){.img .img-half}<!-- nofig -->[![qbbr-telephone-station-3](/img/blog/wood-workspace/qbbr-telephone-station-done.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-done.jpg){.img .img-half .top-fix}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-telephone-station-1](/img/blog/wood-workspace/qbbr-telephone-station-render.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-render.jpg){.img}<!-- nofig -->
+[![qbbr-telephone-station-3](/img/blog/wood-workspace/qbbr-telephone-station-done.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-done.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-telephone-station-2](/img/blog/wood-workspace/qbbr-telephone-station-work.jpg)](/img/blog/wood-workspace/qbbr-telephone-station-work.jpg){.img}<!-- nofig -->
+</div>
+</div>
+
+## build elephant-organizer
+
+<div class="row">
+<div class="column">
+[![qbbr-elephant-organizer-1](/img/blog/wood-workspace/qbbr-elephant-organizer-render.jpg)](/img/blog/wood-workspace/qbbr-elephant-organizer-render.jpg){.img}<!-- nofig -->
+[![qbbr-elephant-organizer-3](/img/blog/wood-workspace/qbbr-elephant-organizer-work-2.jpg)](/img/blog/wood-workspace/qbbr-elephant-organizer-work-2.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-elephant-organizer-2](/img/blog/wood-workspace/qbbr-elephant-organizer-work-1.jpg)](/img/blog/wood-workspace/qbbr-elephant-organizer-work-1.jpg){.img}<!-- nofig -->
+[![qbbr-elephant-organizer-4](/img/blog/wood-workspace/qbbr-elephant-organizer-done.jpg)](/img/blog/wood-workspace/qbbr-elephant-organizer-done.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 ## build cup-stand
 
-[![qbbr-cup-stand-1](/img/blog/wood-workspace/qbbr-cup-stand.jpg)](/img/blog/wood-workspace/qbbr-cup-stand.jpg){.img .img-half}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-cup-stand-1](/img/blog/wood-workspace/qbbr-cup-stand.jpg)](/img/blog/wood-workspace/qbbr-cup-stand.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 # links
 

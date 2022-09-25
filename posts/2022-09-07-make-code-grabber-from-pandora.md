@@ -3,7 +3,14 @@ tags: [hack, hardware, code-grabber]
 author: qbbr
 ---
 
-[![qbbr-make-code-grabber-1](/img/blog/code-grabber/1.jpg)](/img/blog/code-grabber/1.jpg){.img .img-half}<!-- nofig -->[![qbbr-make-code-grabber-2](/img/blog/code-grabber/2.jpg)](/img/blog/code-grabber/2.jpg){.img .img-half}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-make-code-grabber-1](/img/blog/code-grabber/1.jpg)](/img/blog/code-grabber/1.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-make-code-grabber-2](/img/blog/code-grabber/2.jpg)](/img/blog/code-grabber/2.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 ### need
 
@@ -16,7 +23,15 @@ author: qbbr
 
 ### pinout JTAG interface to keychain
 
-[![qbbr-make-code-grabber-3](/img/blog/code-grabber/3.jpg)](/img/blog/code-grabber/3.jpg){.img .img-half}<!-- nofig -->[![qbbr-make-code-grabber-4](/img/blog/code-grabber/4.jpg)](/img/blog/code-grabber/4.jpg){.img .img-half}<!-- nofig -->[![qbbr-make-code-grabber-5](/img/blog/code-grabber/5.jpg)](/img/blog/code-grabber/5.jpg){.img .top-fix}<!-- nofig -->
+<div class="row">
+<div class="column">
+[![qbbr-make-code-grabber-3](/img/blog/code-grabber/3.jpg)](/img/blog/code-grabber/3.jpg){.img}<!-- nofig -->
+[![qbbr-make-code-grabber-5](/img/blog/code-grabber/5.jpg)](/img/blog/code-grabber/5.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-make-code-grabber-4](/img/blog/code-grabber/4.jpg)](/img/blog/code-grabber/4.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
  * *keychain* - 6pins interface
  * *JTAG* - 20pin interface
@@ -46,6 +61,10 @@ author: qbbr
 
 ### enjoy
 
+<div class="row">
+<div class="column">
 [![qbbr-make-code-grabber-6](/img/blog/code-grabber/6.jpg)](/img/blog/code-grabber/6.jpg){.img}<!-- nofig -->
+</div>
+</div>
 
 only just for fun ^_^
