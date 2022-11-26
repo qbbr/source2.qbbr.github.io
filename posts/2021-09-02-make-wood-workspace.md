@@ -71,6 +71,21 @@ author: qbbr
 </div>
 </div>
 
+## build tobacco-pipe
+
+### `make build --material /usr/share/{pear,ebonite}`
+
+<div class="row">
+<div class="column">
+[![qbbr-tobacco-pipe-1](/img/blog/wood-workspace/qbbr-tobacco-pipe-1.jpg)](/img/blog/wood-workspace/qbbr-tobacco-pipe-1.jpg){.img}<!-- nofig -->
+[![qbbr-tobacco-pipe-3](/img/blog/wood-workspace/qbbr-tobacco-pipe-3.jpg)](/img/blog/wood-workspace/qbbr-tobacco-pipe-3.jpg){.img}<!-- nofig -->
+</div>
+<div class="column">
+[![qbbr-tobacco-pipe-2](/img/blog/wood-workspace/qbbr-tobacco-pipe-2.jpg)](/img/blog/wood-workspace/qbbr-tobacco-pipe-2.jpg){.img}<!-- nofig -->
+[![qbbr-tobacco-pipe-4](/img/blog/wood-workspace/qbbr-tobacco-pipe-4.jpg)](/img/blog/wood-workspace/qbbr-tobacco-pipe-4.jpg){.img}<!-- nofig -->
+</div>
+</div>
+
 # links
 
  * [SketchUp](https://www.sketchup.com/)
