@@ -38,6 +38,8 @@ author: qbbr
 </div>
 </div>
 
+[table-led-strip-video](/img/blog/wood-workspace/7-qbbr-table-led-strip.mp4)
+
 ## build telephone-station
 
 <div class="row">
