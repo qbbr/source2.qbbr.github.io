@@ -14,4 +14,6 @@ sudo aptitude install vorbis-tools
 ```bash
 cd /to/dir/with/flac/
 find . -name '*.flac' -exec oggenc -q9 {} \;
+# \w GNU parallel
+find . -type f -name '*.flac' | parallel -j $(getconf _NPROCESSORS_ONLN) oggenc -q9 {}
 ```
