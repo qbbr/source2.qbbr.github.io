@@ -503,6 +503,6 @@ article {}
 
     code {
         white-space: break-spaces;
-        line-height: 3rem;
+        /*line-height: 3rem;*/
     }
 }
