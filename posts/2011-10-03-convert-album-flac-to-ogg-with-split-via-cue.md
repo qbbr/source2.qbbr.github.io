@@ -27,4 +27,6 @@ and convert splited **.flac** to **.ogg**
 
 ```bash
 find . -name 'split-track*.flac' -exec oggenc -q9 {} \;
+# \w GNU parallel
+find . -type f -name '*.flac' | parallel -j $(getconf _NPROCESSORS_ONLN) oggenc -q9 {}
 ```
