@@ -23,9 +23,9 @@ input(type="imtcp" port="514")
 # configuration for rsyslog-mysql
 module(load="ommysql")
 # collect all logs
-*.* action(type="ommysql" server="localhost" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
+*.* action(type="ommysql" server="127.0.0.1" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
 # collect only only error,warn,crit,alert,emerg
-#-*.=error;*.=warn;*.=crit;*.=alert;*.=emerg action(type="ommysql" server="localhost" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
+#-*.=error;*.=warn;*.=crit;*.=alert;*.=emerg action(type="ommysql" server="127.0.0.1" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
 
 ```
 
