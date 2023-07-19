@@ -7,11 +7,9 @@ author: qbbr
 
 ```bash
 apt install rsyslog-mysql
-touch /etc/rsyslog.d/51-mysql-server.conf
-chmod 600 /etc/rsyslog.d/51-mysql-server.conf
 ```
 
-/etc/rsyslog.d/51-mysql-server.conf:
+/etc/rsyslog.d/mysql.conf:
 
 ```ini
 # provides UDP syslog reception
@@ -24,7 +22,11 @@ input(type="imtcp" port="514")
 
 # configuration for rsyslog-mysql
 module(load="ommysql")
-*.=error;*.=warn;*.=crit;*.=alert;*.=emerg action(type="ommysql" server="localhost" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
+# collect all logs
+*.* action(type="ommysql" server="localhost" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
+# collect only only error,warn,crit,alert,emerg
+#-*.=error;*.=warn;*.=crit;*.=alert;*.=emerg action(type="ommysql" server="localhost" db="Syslog" uid="rsyslog" pwd="MYSQL_PASSWORD")
+
 ```
 
 iptables, if used:
@@ -52,7 +54,7 @@ mysql Syslog -u rsyslog -p
 ```
 
 ```ini
-# send only error,warn,crit,alert
+# send only error,warn,crit,alert,emerg
 *.=error;*.=warn;*.=crit;*.=alert;*.=emerg @@10.10.1.1:514
 ```
 
