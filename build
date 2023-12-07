@@ -14,7 +14,7 @@ STATIC_DIR="static"
 VIEW_DIR="views"
 TMP_DIR="tmp"
 
-export _site_="qbbr.io"
+export _site_="qbbr.cat"
 export _title_=""
 export _header_=""
 export _page_=""
