@@ -1,7 +1,5 @@
 # qbbr.io blog source
 
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
-
 a simple static site/blog generator written on [bash](build)
 
 [qbbr.io](https://qbbr.io/)
