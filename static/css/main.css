@@ -259,21 +259,21 @@ footer {
         }
 
         footer .peace-no-war .peace {
-            background-color: #0057B7;
+            background-color: #dc322f;
             color: white;
         }
 
         footer .peace-no-war .no-war {
-            background-color: #FFD700;
+            background-color: #cb4b16;
             color: black;
         }
 
     footer .peace-no-war:hover .peace {
-        background-color: #FFD700;
+        background-color: #cb4b16;
         color: black;
     }
     footer .peace-no-war:hover .no-war {
-        background-color: #0057B7;
+        background-color: #dc322f;
         color: white;
     }
 
